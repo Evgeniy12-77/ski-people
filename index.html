@@ -283,11 +283,9 @@
               <p class="cart__order-price">20&nbsp;000&nbsp;₽</p>
             </div>
             <p class="cart__order-delivery">Доставка 0 ₽</p>
-            <button
-              class="cart__order-button"
-              type="submit"
-              form="cartform"
-            >Оформить заказ</button>
+            <button class="cart__order-button" type="submit" form="cartform">
+              Оформить заказ
+            </button>
           </div>
           <form action="#" class="cart__form" method="post">
             <h3 class="cart__form-title">Данные для доставки</h3>
@@ -301,26 +299,87 @@
             <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Доставка</legend>
               <label class="cart__form-label">
-                <input class="cart__form-radio" type="radio" value="delivery" name="delivery"/>
+                <input
+                  class="cart__form-radio"
+                  type="radio"
+                  value="delivery"
+                  name="delivery"
+                />
                 Доставка
               </label>
               <label class="cart__form-label">
-                <input class="cart__form-radio" type="radio" value="pickup" name="delivery"/>
+                <input
+                  class="cart__form-radio"
+                  type="radio"
+                  value="pickup"
+                  name="delivery"
+                />
                 Самовывоз
               </label>
             </fieldset>
-             <fieldset class="cart__form-fieldset">
+            <fieldset class="cart__form-fieldset">
               <legend class="cart__form-legend">Оплата</legend>
               <label class="cart__form-label">
-                <input class="cart__form-radio" type="radio" value="card" name="payment"/>
+                <input
+                  class="cart__form-radio"
+                  type="radio"
+                  value="card"
+                  name="payment"
+                />
                 Картой при получении
               </label>
               <label class="cart__form-label">
-                <input class="cart__form-radio" type="radio" value="cash" name="payment"/>
+                <input
+                  class="cart__form-radio"
+                  type="radio"
+                  value="cash"
+                  name="payment"
+                />
                 Наличными
               </label>
             </fieldset>
           </form>
+        </div>
+      </section>
+
+      <section class="order">
+        <div class="container">
+          <h2 class="order__title">Заказ успешно размещен</h2>
+          <p class="order__totalsum">20&nbsp;000&nbsp;</p>
+          <p class="order__id">№43435</p>
+
+          <div class="order__info">
+            <h3 class="order__info-title">Данные доставки</h3>
+            <table class="order__info-table order__table">
+              <tr class="order__table-row">
+                <td class="order__table-item">Получатель</td>
+                <td class="order__table-item">Иванов Петр Александрович</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Телефон</td>
+                <td class="order__table-item">+7 (737) 346 23 00</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">E-mail</td>
+                <td class="order__table-item">Ivanov84@gmail.com</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Адрес доставки</td>
+                <td class="order__table-item">
+                  Москва, ул. Ленина, 21, кв. 33
+                </td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ оплаты</td>
+                <td class="order__table-item">Картой при получении</td>
+              </tr>
+              <tr class="order__table-row">
+                <td class="order__table-item">Способ получения</td>
+                <td class="order__table-item">Доставка</td>
+              </tr>
+            </table>
+            <button class="order__button" type="button">На главную</button>
+          </div>
         </div>
       </section>
     </main>
